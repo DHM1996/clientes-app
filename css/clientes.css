@@ -1,0 +1,329 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    background-color:#f5f5f5
+}
+
+/********************************* Encabezado ***********************************************/
+
+.encabezado{
+    align-items:center;
+    background-color:#0f1626;
+    display:flex ;
+    height:15vh;
+    justify-content:space-between; 
+    margin:auto;
+    min-height:100px;
+    min-width:1120px;
+    width:96vw;
+}
+
+.encabezado__logo{
+    color:#ff533d;
+    font-size: 100px;
+    padding: 0 20px;
+}
+
+.encabezado__titulo{
+    color:#ffffff;
+    display:inline;
+    font-family:sans-serif;
+    font-size:50px;
+}
+
+.encabezado__fecha-hora{
+    color:#ffffff;
+    display:inline-block;
+    font-family:sans-serif;
+    font-size:20px;
+    padding-right:10px; 
+    text-align:right;
+    width:230px;
+}
+
+/********************************* Contenido ************************************************/
+
+/*Barra*/
+
+.barra{
+    background-color: #A9A9A9;
+    display:flex;
+    justify-content: space-between;
+    margin:auto;
+    min-width:1120px;
+    width:96vw; 
+}
+
+
+.barra__busqueda-input{
+    background-color: #EBE9E8;
+    display:inline-block;
+    width:200px;
+    height:40px;
+    border:1px solid #434343;
+    padding:2px;
+    text-align:center;
+}
+
+
+
+.barra__mensaje{
+    display:inline-block;
+    margin:4px;
+    width:400px;
+}
+
+.barra__mensaje--confirmacion{
+    background-color: #cef5b3;
+    color:#2d6e07
+}
+
+.barra__mensaje--error{
+    background-color: #ffdad2;
+    color:#ff0000;
+}
+
+.barra__mensaje-icono{
+    display:inline-block;
+    font-size: 16px;
+    vertical-align:top;
+}
+
+.barra__mensaje-texto{
+    display:inline-block;
+    vertical-align:top;
+    width:350px;
+}
+
+.barra__boton{
+    background-color:#ff533d;
+    display:inline-block;
+    font-weight:bold;
+    height: 40px;
+    margin:8px;
+    text-align: center;
+    width: 120px;
+}
+
+.barra__busqueda-consultar{
+    margin-right: 50px;
+}
+
+
+/*Tabla*/
+
+.tabla-clientes{
+    border-collapse:collapse;
+    margin:15px auto;
+    min-width:1070px;
+    width:96vw;
+}
+
+.tabla-clientes tbody tr:nth-child(even) {
+	background: #FEFBF6;
+}
+
+.tabla-clientes tbody tr:nth-child(odd) {
+	background: #fff5e0;
+}
+
+.tabla-clientes__td{
+    border: 1px solid black;
+    padding:5px;  
+    text-align:left;
+}
+
+.tabla-clientes__editar,.tabla-clientes__eliminar{
+    color:#ffffff;
+    display:block;
+    text-align: center;
+    text-decoration:none; 
+}
+
+.tabla-clientes__td--editar{
+    background-color:#0000ff;
+}
+
+.tabla-clientes__td--eliminar{
+    background-color:#ff0000;
+}
+
+.tabla-clientes__th{
+    background-color:#ff533d;
+    border: 1px solid black;
+    padding:5px;
+    text-align:center;
+}
+
+/* Paginacion */
+
+.contenedor-paginacion{
+    min-width:1120px;
+    text-align:center;
+}
+
+.contenedor-cantidad{
+    display:block;
+    margin:15px auto;
+    min-width:1120px;
+    width:96vw;
+}
+
+.numpag{
+    text-decoration:none; 
+    color:#ff533d;
+    font-size:24px;
+}
+
+.numpag--seleccion{
+    font-size:32px;
+}
+
+
+/********************************* Modal ************************************************/
+
+/*Modal*/
+
+.modal{
+    background-color: rgb(100,100,100,.5);
+    display:none;
+    height:100vh;
+    left:0;
+    position:fixed;
+    top:0;
+    width:100vw;
+}
+
+/*Ventana*/
+
+.ventana{
+    background-color: #f5f5f5;
+    display:inline-block;
+    font-family:Crete Round;
+    height:80%;
+    left:25%;
+    min-width:650px;
+    min-height:680px;
+    position:absolute;
+    top:10%;
+    width:50%;
+}
+
+.formulario{
+    display:inline-block;
+    height:100%;
+    width:100%;
+}
+
+/*Formulario-seccion-encabezado*/
+
+.formulario__seccion-encabezado{
+    display:flex;
+    background-color:#0f1626;
+    justify-content:space-between;
+    height:10%;
+}
+
+
+.formulario__titulo{
+    color:#ffffff;
+    display:inline-block;
+    padding:30px 8px;
+}
+
+/*Formulario-seccion-campos*/
+
+.formulario__seccion-campos{
+    display:flex;
+    flex-wrap:wrap;
+    height: 83%;
+    width: 100%;
+}
+
+
+.formulario__subtitulo{
+    background-color:#ff533d;
+    color:#ffffff;
+    display:inline-block;
+    padding:5px;
+    width:100%;
+}
+
+.grupo{
+    display:inline-block;
+    font-size: 16px;
+    flex-grow:1;
+    height:15%;
+    margin:5px;
+    width:30%;
+}
+
+.grupo__error{
+    display:none;
+    color:#ff0000;
+}
+
+.grupo__etiqueta{
+    display:block;
+    font-weight: bold;
+}
+
+.grupo__icono-validacion-i{
+    color:#ff0000;
+}
+
+.grupo__icono-validacion-c{
+    color:#37C717;
+}
+
+.grupo__input--texto,.grupo__input--seleccion,.grupo__input--fecha{
+    background-color:#f5f5f5;
+    border-bottom: 1px solid black;
+    display:inline-block;
+    height: 30%;
+    width: 85%;
+}
+
+.grupo__input--texto:focus{
+    outline: none;
+}
+
+.grupo__input--texto-i{
+    border-color:#ff0000;
+    color:#ff0000;
+}
+
+/*tamaño de campos especiales*/
+#altura,#departamento,#codigo{
+    width:15%;
+}
+
+#telefono{
+    width:40%;
+}
+
+/*Formulario-seccion-control*/
+
+.formulario__seccion-control{
+    align-items:center;
+    background-color:#0f1626;
+    color:white;
+    display:flex;
+    height:7%;
+    justify-content:flex-end;
+    width:100%;
+    text-align: right;
+}
+
+.formulario__boton{
+    background-color:#ff533d;
+    color:#ffffff;
+    display:inline-block;
+    height:30px;
+    margin:10px;
+    width:80px;
+}
